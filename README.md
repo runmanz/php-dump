@@ -10,7 +10,9 @@ $dump = new Debug();
 $dump::dd($dump_arr);
 ```
 OR<br>
-``Debug::dd($dump_arr);``
+```
+Debug::dd($dump_arr);
+```
 ## 事后
 鱿鱼我这是我自己用递归写的方法，所以您的deep太深了也是会有点慢，so please wait with patient。
 ## 实例
