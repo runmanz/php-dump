@@ -1,7 +1,6 @@
 <?php
 namespace runmanz\Tools;
 
-
 class Debug
 {
     public static function DeepDump($arr,$deep = 0){
