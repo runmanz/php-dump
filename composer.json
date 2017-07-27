@@ -1,0 +1,15 @@
+{
+    "name": "runmanz/php-dump",
+    "description": "php deep dump",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "runmanz",
+            "email": "296413715@qq.com"
+        }
+    ],
+    "autoload":{
+        "psr-4" : { "\\runmanz\\Tools" : "src/" }
+    }
+}
