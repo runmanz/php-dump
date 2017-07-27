@@ -10,6 +10,6 @@
         }
     ],
     "autoload":{
-        "psr-4" : { "\\runmanz\\Tools" : "src/" }
+        "psr-4" : { "\\runmanz\\Tools\\" : "src/" }
     }
 }
