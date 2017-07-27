@@ -3,12 +3,14 @@
 > 有时候想输出数组直观的看数据的时候，却发现`var_dump`就最多输出了个二维数组有木有，然后就趁着空隙写了个自己平时用的`dump`方法，朋友不妨发到`composer`上吧，之后就有个这个package。
 ## 引用
 * 首先引用命名空间<br>
-``namespace runmanz\Tools\Debug``
+``use runmanz\Tools\Debug;``
 * 接着就是方法的调用啦，基本和其他的静态方法一样<br>
 ```
 $dump = new Debug();
-$dump::DeepDump($dump_arr);
+$dump::dd($dump_arr);
 ```
+OR<br>
+``Debug::dd($dump_arr);``
 ## 事后
 鱿鱼我这是我自己用递归写的方法，所以您的deep太深了也是会有点慢，so please wait with patient。
 ## 实例
@@ -67,7 +69,7 @@ $arr = [
             [321,12312,'123123']
     ];
     $com = new Debug();
-    $com::DeepDump($arr);die;
+    $com::dd($arr);
 ```
 输出结果
 ```
@@ -145,12 +147,9 @@ array(size=2)
 输入内容2
 ```
 $str = '测试';
-$com = new Debug();
-$com::DeepDump($str);
+Debug:dd($str);
 ```
 输出结果2
 ```
 测试
 ```
-当然你可以怎么调用方法
-``Debug::DeepDump($arr);``

@@ -3,7 +3,7 @@ namespace runmanz\Tools;
 
 class Debug
 {
-    public static function DeepDump($arr,$deep = 0){
+    public static function dd($arr,$deep = 0){
         echo '<pre style="margin: 5px auto">';
         if(is_array($arr)){
             $c = count($arr);
@@ -20,7 +20,7 @@ class Debug
                 else
                     echo $space."  '".$k."' => ";
                 if(is_array($v)){
-                    static::DeepDump($v,$deep);
+                    static::dd($v,$deep);
                 }else{
                     $types = gettype($v);
                     if($types == 'integer' || $types == 'int')

@@ -54,6 +54,6 @@ $arr = [
     [321,12312,'123123']
 ];
 $com = new Debug();
-$com::DeepDump($arr);
+$com::dd($arr);
 $str = "测试";
-$com::DeepDump($str);
+Debug::dd($str);
