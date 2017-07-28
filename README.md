@@ -2,10 +2,16 @@
 ## 背景
 > 有时候想输出数组直观的看数据的时候，却发现`var_dump`就最多输出了个二维数组有木有，然后就趁着空隙写了个自己平时用的`dump`方法，朋友不妨发到`composer`上吧，之后就有个这个package。然后顺手把`echo`也写了进去，也就是说你可以用`dd`实现`echo & var_dump`的功能。
 ## 引用
+在调用方法之前请记得用[`composer`](https://getcomposer.org/download/)安装这个包哦。
+```
+composer require runmanz/php-dump;
+```
 > Style One
-* 首先引用命名空间<br>
-``use runmanz\Tools\Debug;``
-* 接着就是方法的调用啦，基本和其他的静态方法一样<br>
+* 首先引用命名空间
+```
+use runmanz\Tools\Debug;
+```
+* 接着就是方法的调用啦，基本和其他的静态方法一样
 ```
 $dump = new Debug();
 $dump::dd($dump_arr);
