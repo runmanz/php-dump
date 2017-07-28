@@ -1,6 +1,5 @@
 <?php
 require_once __DIR__.'/../vendor/autoload.php';
-use runmanz\Tools\Debug;
 $arr = [
     [
         [
@@ -53,8 +52,4 @@ $arr = [
     ],
     [321,12312,'123123']
 ];
- $com = new Debug();
- $com::dd($arr);
- $str = "测试";
- Debug::dd($str);
-//dd($arr);
+dd($arr);

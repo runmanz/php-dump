@@ -10,7 +10,8 @@
         }
     ],
     "autoload":{
-        "psr-4" : { "runmanz\\Tools\\" : "src/" }
+        "files": ["src/global.php" ],
+        "psr-4" : {"runmanz\\Tools\\" : "src/"}
     },
     "autoload-dev":{
         "psr-4" : { "runmanz\\Tools\\Tests\\" : "tests/"}
